@@ -1,0 +1,3 @@
+[console_scripts]
+optimize-images = optimize_images.__main__:main
+

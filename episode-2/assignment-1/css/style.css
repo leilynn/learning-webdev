@@ -1,0 +1,59 @@
+:root {
+    --default-margin: 0.2rem;
+}
+
+#fileUploaderBody {
+    direction: rtl;
+    background-color: grey;
+    color: white;
+}
+
+.hideMe {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    padding: 0;
+    position: absolute !important;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 0.1px;
+    width: 0.1px;
+}
+
+.redButton {
+    background-color: red;
+    padding: 0.5rem 0.5rem;
+    margin: var(--default-margin);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.redButton:hover {
+    background-color: #a00;
+    box-shadow: 0rem 0rem 1rem black;
+}
+
+#fileUploadContainer {
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    width: 25rem;
+    position: relative;
+}
+
+#fileUploadLabel {
+    display: inline-block;
+    width: 22rem;
+    margin: var(--default-margin);
+    margin-top: 3rem;
+}
+
+#uploadHeader {
+    width: 6rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.5rem;
+}
