@@ -1,4 +1,64 @@
-.myImage{
+body {
+    background-color: grey;
+    color: white;
+}
+
+.seprator {
+    height: 0.2rem;
+    /* background-clip: border-box; */
+    background-color: white;
+    border-radius: 1rem;
+    border-style: solid;
+}
+
+.myImage {
+    /* display: inline-flex; */
+    /* justify-content: center;
+    align-items: center; */
+    display: inline-block;
+    /* margin: 0.5rem; */
+    /* padding: 0.5rem; */
+    padding: 0;
     max-width: 100%;
-    max-height: 150px;
+    transition-property: all;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+}
+
+.myImage:hover {
+    max-width: 150%;
+    /* z-index: 100; */
+}
+
+.imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 0;
+    max-width: 15rem;
+    max-height: 15rem;
+    /* transition-property: all; */
+    /* transition-duration: 1s; */
+    /* transition-delay: 0.5s; */
+    overflow: hidden;
+}
+
+
+/* .imageBox:hover {
+    max-width: ;
+    max-height: 70vh;
+    overflow: unset;
+} */
+
+.grid3x3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
 }

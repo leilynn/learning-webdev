@@ -39,21 +39,27 @@
     border: 0.1rem solid white;
     border-radius: 0.5rem;
     width: 25rem;
+    max-width: 50%;
     position: relative;
+    box-sizing: content-box;
 }
 
 #fileUploadLabel {
     display: inline-block;
-    width: 22rem;
+    width: 80%;
+    /* max-zoom: 100%; */
     margin: var(--default-margin);
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    text-align: justify;
 }
 
 #uploadHeader {
     width: 6rem;
+    max-width: 30%;
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     border-top-left-radius: 0.5rem;
 }
