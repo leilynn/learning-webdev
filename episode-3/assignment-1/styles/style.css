@@ -1,0 +1,102 @@
+body {
+    font-size: 100%;
+    background-color: grey;
+    color: white;
+    --stroke-test-distance: 0.01rem;
+    --stroke-test-blur-radius: 0.3rem;
+    --stroke-test-color: black;
+    background-image: url('../images/back.jpg');
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.seprator {
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 1rem;
+    border-style: solid;
+}
+
+.myImage {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.imageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    max-width: 15rem;
+    max-height: 7rem;
+    /* min-height: 5rem; */
+    overflow: hidden;
+    border: solid #e00;
+    border-radius: 1rem;
+}
+
+.imageBox:hover {
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-color: #fb0
+}
+
+.grid3x3 {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* columns: 3 200px; */
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    overflow: hidden;
+}
+
+.cell {
+    margin: 3%;
+}
+
+.imageBox,
+.grid3x3,
+.cell {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.imageCaption {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.copyrightText {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.shadowyText,
+.imageCaption {
+    text-shadow: var(--stroke-test-distance) var(--stroke-test-distance) var(--stroke-test-blur-radius) var(--stroke-test-color), calc(-1 * var(--stroke-test-distance)) var(--stroke-test-distance) var(--stroke-test-blur-radius) var(--stroke-test-color), var(--stroke-test-distance) calc(-1 * var(--stroke-test-distance)) var(--stroke-test-blur-radius) var(--stroke-test-color), calc(-1 * var(--stroke-test-distance)) calc(-1 * var(--stroke-test-distance)) var(--stroke-test-blur-radius) var(--stroke-test-color);
+}
+
+.animation,
+.imageBox {
+    -webkit-transition-property: all;
+    transition-property: all;
+    /* transition-delay: 0.2s; */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
