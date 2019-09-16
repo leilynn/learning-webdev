@@ -57,9 +57,7 @@ body {
     margin: 3%;
 }
 
-.imageBox,
-.grid3x3,
-.cell {
+.imageBox, .grid3x3, .cell {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -87,13 +85,11 @@ body {
     font-size: 0.9rem;
 }
 
-.shadowyText,
-.imageCaption {
+.shadowyText, .imageCaption {
     text-shadow: var(--stroke-test-distance) var(--stroke-test-distance) var(--stroke-test-blur-radius) var(--stroke-test-color), calc(-1 * var(--stroke-test-distance)) var(--stroke-test-distance) var(--stroke-test-blur-radius) var(--stroke-test-color), var(--stroke-test-distance) calc(-1 * var(--stroke-test-distance)) var(--stroke-test-blur-radius) var(--stroke-test-color), calc(-1 * var(--stroke-test-distance)) calc(-1 * var(--stroke-test-distance)) var(--stroke-test-blur-radius) var(--stroke-test-color);
 }
 
-.animation,
-.imageBox {
+.animation, .imageBox {
     -webkit-transition-property: all;
     transition-property: all;
     /* transition-delay: 0.2s; */
