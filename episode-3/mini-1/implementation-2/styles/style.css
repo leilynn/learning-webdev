@@ -1,0 +1,89 @@
+.adobeMenu {
+    display: flex;
+    margin: 0.1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.adobeMenu li {
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.08rem 0 0 0;
+    /* border: solid 1px red; */
+}
+
+.adobeMenu hr {
+    z-index: 1;
+    margin: 0;
+    height: 0.2rem;
+    background: radial-gradient(circle, #555, transparent);
+    border-radius: 50%;
+    border-style: none;
+}
+
+.adobeButton {
+    text-decoration: none;
+    --primary-color-r: 255;
+    --primary-color-g: 0;
+    --primary-color-b: 0;
+    --darkness-factor: 1.4;
+    --font-size: 1.7rem;
+    --size: 2.7rem;
+    transform: translateY(calc(var(--size) / 1.7));
+    box-shadow: 0.01rem 0.01rem 0.2rem black;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    font-size: var(--font-size);
+    text-align: center;
+    width: var(--size);
+    height: var(--size);
+    line-height: var(--size);
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    color: black;
+    font-weight: 600;
+    border-radius: 7%;
+    background: linear-gradient( to right, transparent 60%, rgb(calc(var(--primary-color-r)/var(--darkness-factor)), calc(var(--primary-color-g)/var(--darkness-factor)), calc(var(--primary-color-b)/var(--darkness-factor)))), linear-gradient(to bottom, transparent 60%, rgb(calc(var(--primary-color-r)/var(--darkness-factor)), calc(var(--primary-color-g)/var(--darkness-factor)), calc(var(--primary-color-b)/var(--darkness-factor)))), rgb( var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+}
+
+.adobeButton:hover {
+    transform: translateY(0);
+}
+
+.smallCaps {
+    font-variant: small-caps;
+}
+
+.primaryBlue {
+    --primary-color-r: 0;
+    --primary-color-g: 140;
+    --primary-color-b: 230;
+}
+
+.primarySandgold {
+    --primary-color-r: 200;
+    --primary-color-g: 180;
+    --primary-color-b: 60;
+}
+
+.primaryCranberry {
+    --primary-color-r: 200;
+    --primary-color-g: 20;
+    --primary-color-b: 50;
+}
+
+.primaryLightgold {
+    --primary-color-r: 255;
+    --primary-color-g: 255;
+    --primary-color-b: 50;
+}
+
+.animation, .adobeButton {
+    -webkit-transition-property: all;
+    transition-property: all;
+    /* transition-delay: 0.2s; */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
