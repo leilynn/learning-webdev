@@ -25,10 +25,11 @@
 
 .adobeButton {
     text-decoration: none;
-    --primary-color-r: 255;
-    --primary-color-g: 0;
-    --primary-color-b: 0;
-    --darkness-factor: 1.4;
+    --primary-color-h: 0;
+    --primary-color-s: 100%;
+    --primary-color-l: 50%;
+    --darkness-factor: 6;
+    --saturation-factor: 3;
     --font-size: 1.7rem;
     --size: 2.7rem;
     transform: translateY(calc(var(--size) / 1.7));
@@ -45,7 +46,7 @@
     color: black;
     font-weight: 600;
     border-radius: 7%;
-    background: linear-gradient( to right, transparent 60%, rgb(calc(var(--primary-color-r)/var(--darkness-factor)), calc(var(--primary-color-g)/var(--darkness-factor)), calc(var(--primary-color-b)/var(--darkness-factor)))), linear-gradient(to bottom, transparent 60%, rgb(calc(var(--primary-color-r)/var(--darkness-factor)), calc(var(--primary-color-g)/var(--darkness-factor)), calc(var(--primary-color-b)/var(--darkness-factor)))), rgb( var(--primary-color-r), var(--primary-color-g), var(--primary-color-b));
+    background: radial-gradient(circle at 0 0, hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l)) 50%, hsl(var(--primary-color-h), calc(var(--primary-color-s)*var(--saturation-factor)), calc(var(--primary-color-l)/var(--darkness-factor))));
 }
 
 .adobeButton:hover {
@@ -57,27 +58,27 @@
 }
 
 .primaryBlue {
-    --primary-color-r: 0;
-    --primary-color-g: 140;
-    --primary-color-b: 230;
+    --primary-color-h: 200;
+    --primary-color-s: 100%;
+    --primary-color-l: 45%;
 }
 
 .primarySandgold {
-    --primary-color-r: 200;
-    --primary-color-g: 180;
-    --primary-color-b: 60;
+    --primary-color-h: 51;
+    --primary-color-s: 56%;
+    --primary-color-l: 45%;
 }
 
 .primaryCranberry {
-    --primary-color-r: 200;
-    --primary-color-g: 20;
-    --primary-color-b: 50;
+    --primary-color-h: 350;
+    --primary-color-s: 82%;
+    --primary-color-l: 43%;
 }
 
 .primaryLightgold {
-    --primary-color-r: 255;
-    --primary-color-g: 255;
-    --primary-color-b: 50;
+    --primary-color-h: 60;
+    --primary-color-s: 70%;
+    --primary-color-l: 60%;
 }
 
 .animation, .adobeButton {
