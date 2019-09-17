@@ -1,0 +1,21 @@
+<svg width="70mm" height="70mm" version="1.1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<radialGradient id="a" cx="24.144" cy="22.613" r="35" gradientTransform="matrix(1.4745 1.5824 -1.5799 1.4722 18.517 -56.969)" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0" offset="0"/>
+<stop stop-opacity=".62304" offset="1"/>
+</radialGradient>
+<linearGradient id="b" x1="35.094" x2="35.468" y1="50.252" y2="70.378" gradientUnits="userSpaceOnUse">
+<stop stop-opacity=".031414" offset="0"/>
+<stop stop-opacity=".21466" offset="1"/>
+</linearGradient>
+</defs>
+<rect x="1.1042e-6" y="-.089286" width="70" height="70" ry="9.0714" fill="url(#b)" stroke-width=".26458"/>
+<g transform="translate(8.7894e-8 .089286)">
+<rect x="-8.7894e-8" y="-.089286" width="70" height="70" ry="9.0714" fill="#ff1e7e" stroke-width=".26458"/>
+<rect x="1.1042e-6" y="-.089286" width="70" height="70" ry="9.0714" fill="url(#a)" stroke-width=".26458"/>
+<g transform="matrix(.74941 0 0 .80341 6.7653 8.8332)" stroke-width=".39179" aria-label="ID">
+<path d="m14.511 5.8176h7.4195v54.838h-7.4195z"/>
+<path d="m35.944 28.421v28.203h5.9271q7.5061 0 10.98-3.4008 3.498-3.4008 3.498-10.737 0-7.2875-3.498-10.664-3.4737-3.4008-10.98-3.4008zm-4.9069-4.0324h10.081q10.543 0 15.474 4.3968 4.9312 4.3725 4.9312 13.7 0 9.3765-4.9555 13.773-4.9555 4.3968-15.449 4.3968h-10.081z"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,49 @@
+.adobeMenu {
+    display: flex;
+    margin: 0.1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.adobeMenu li {
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.08rem 0 0 0;
+}
+
+.adobeMenu hr {
+    z-index: 1;
+    margin: 0;
+    height: 0.2rem;
+    background: radial-gradient(circle, #555, transparent);
+    border-radius: 50% 50% 0 0;
+    border-style: none;
+}
+
+.adobeMenu li a {
+    --size: 2.7rem;
+    text-decoration: none;
+    transform: translateY(calc(var(--size) / 1.7));
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    width: var(--size);
+    height: var(--size);
+    color: black;
+}
+
+.adobeMenu li a:hover {
+    transform: translateY(0);
+}
+
+.adobeMenu li a img{
+    height: var(--size);
+    width: var(--size);
+    border-radius: 14%;
+}
+
+.animation, .adobeMenu * {
+    transition-property: all;
+    transition-duration: 0.5s;
+}

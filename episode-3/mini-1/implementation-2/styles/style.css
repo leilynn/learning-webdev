@@ -77,8 +77,8 @@
 
 .primaryLightgold {
     --primary-color-h: 60;
-    --primary-color-s: 70%;
-    --primary-color-l: 60%;
+    --primary-color-s: 90%;
+    --primary-color-l: 55%;
 }
 
 .animation, .adobeButton {
