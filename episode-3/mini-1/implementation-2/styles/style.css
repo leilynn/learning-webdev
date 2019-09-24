@@ -3,6 +3,7 @@
     margin: 0.1rem;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .adobeMenu li {
@@ -17,9 +18,9 @@
 .adobeMenu hr {
     z-index: 1;
     margin: 0;
-    height: 0.2rem;
+    height: 0.15rem;
     background: radial-gradient(circle, #555, transparent);
-    border-radius: 50%;
+    border-radius: 50% 50% 0 0;
     border-style: none;
 }
 
@@ -84,7 +85,6 @@
 .animation, .adobeButton {
     -webkit-transition-property: all;
     transition-property: all;
-    /* transition-delay: 0.2s; */
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
